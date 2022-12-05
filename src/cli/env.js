@@ -1,5 +1,7 @@
 const parseEnv = () => {
-    // Write your code here 
+    for(let variable in process.env) {
+        console.log(`RSS_${variable}=${process.env[variable]};`);
+    }
 };
 
 parseEnv();
